@@ -103,7 +103,7 @@ h4 {
   width: 32px;
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 30px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -140,8 +140,12 @@ h4 {
 
 .logo {
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 25px;
+  left: 30px;
+}
+
+.logo img {
+  width: 64px;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -196,4 +200,37 @@ h4 {
 
 .material-icons {
   color: var(--red);
+}
+
+.links {
+  border-top: 0.5vh var(--red) solid;
+  background-color: var(--darkgrey);
+  color: var(--white);
+}
+
+.data {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.data p {
+  font-size: 1vh;
+}
+
+.copyright {
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1vh;
 }
