@@ -8,10 +8,11 @@
 
     <link href="static/Logo.png" rel="shortcut icon" />
     <link href="main.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
+    <script
+      src="https://kit.fontawesome.com/b0cf652fca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -37,12 +38,22 @@
               <li><a href="library.html">BIBLIOTEKA</a></li>
               <li><a href="contact.html">KONTAKT</a></li>
 
-              <!-- TODO: social -->
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- TODO: title-->
+        <!-- TODO: title for desktop version-->
       </div>
     </nav>
 
@@ -52,7 +63,7 @@
         <h2>Czym się zajmujemy?</h2>
 
         <div class="service">
-          <span class="material-icons"> local_fire_department </span>
+          <i class="fas fa-fire"></i>
           <h4>Lorem ipsum</h4>
           <p>
             Vitae quis non odio tellus eget arcu ac proin. Eros, enim rhoncus et
@@ -61,7 +72,7 @@
         </div>
 
         <div class="service">
-          <span class="material-icons"> local_fire_department </span>
+          <i class="fas fa-fire"></i>
           <h4>Lorem ipsum</h4>
           <p>
             Vitae quis non odio tellus eget arcu ac proin. Eros, enim rhoncus et
@@ -70,7 +81,7 @@
         </div>
 
         <div class="service">
-          <span class="material-icons"> local_fire_department </span>
+          <i class="fas fa-fire"></i>
           <h4>Lorem ipsum</h4>
           <p>
             Vitae quis non odio tellus eget arcu ac proin. Eros, enim rhoncus et
@@ -79,7 +90,7 @@
         </div>
 
         <div class="service">
-          <span class="material-icons"> local_fire_department </span>
+          <i class="fas fa-fire"></i>
           <h4>Lorem ipsum</h4>
           <p>
             Vitae quis non odio tellus eget arcu ac proin. Eros, enim rhoncus et
@@ -94,15 +105,44 @@
         <div class="history-content">
           <h3>HISTORIA PISANA PRZEZ POKOLENIA</h3>
           <h2>Jak powstawała jednostka?</h2>
+
+          <p class="history-mobile">
+            Po sześciu niespełna wiekach istnienia Nawojowej Góry zrodziła się w
+            tej miejscowości około roku 1894 idea zbiorowej ochrony
+            przeciwpożarowej...
+          </p>
+
+          <p class="history-desktop">
+            Po sześciu niespełna wiekach istnienia Nawojowej Góry zrodziła się w
+            tej miejscowości około roku 1894 idea zbiorowej ochrony
+            przeciwpożarowej. Ówczesne władze powiatowe w Chrzanowie przekazały
+            samodzielnej wtedy Gminie Nawojowa Góra sprzęt pożarniczy w postaci
+            sikawki ręcznej oraz innych przedmiotów do zbiorowego gaszenia
+            pożarów. To właśnie zapoczątkowało działalność Ochotniczej Straży
+            Pożarnej w Nawojowej Górze.
+          </p>
+
+          <a href="history.html" alt="Historia jednostki">
+            <button>CZYTAJ DALEJ</button></a
+          >
         </div>
 
         <div class="polygon right"></div>
       </div>
 
       <div class="join-us">
-        <div class="join">
-          <h3>JESTEŚMY TU DLA MIESZKAŃCÓW</h3>
-          <h2>Dołącz do nas!</h2>
+        <h3>JESTEŚMY TU DLA MIESZKAŃCÓW</h3>
+        <h2>Dołącz do nas!</h2>
+
+        <div class="button-section">
+          <a href="join.html" alt="Chce dołączyć!">
+            <button>CHCE DOŁĄCZYĆ!</button></a
+          >
+        </div>
+        <div class="button-section">
+          <a href="donate.html" alt="Chce wspomóc!">
+            <button>CHCE WSPOMÓC!</button></a
+          >
         </div>
       </div>
     </main>
@@ -138,7 +178,7 @@
       </div>
 
       <div class="copyright">
-        <a href="https://github.com/kgrela" alt="author: kgrela" target="_blank"
+        <a href="https://github.com/kgrela" alt="author" target="_blank"
           >Copyright &copy; 2021</a
         >
       </div>
