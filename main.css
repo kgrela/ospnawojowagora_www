@@ -16,6 +16,7 @@
 body {
   width: 100%;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -60,10 +61,6 @@ button {
 
 button:hover {
   opacity: 0.7;
-}
-
-footer {
-  margin-top: 3rem;
 }
 
 ul,
@@ -153,12 +150,17 @@ ul li {
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 1);
   background-color: var(--white);
   width: 100%;
-  transform: translateX(150%);
+  transform: translateX(100%);
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease-in-out;
   text-align: center;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .navbar .menu-items li {
@@ -239,6 +241,10 @@ ul li {
   width: 65%;
 }
 
+.join-us {
+  padding-bottom: 2rem;
+}
+
 .fas,
 .fab {
   color: var(--red);
@@ -262,6 +268,11 @@ ul li {
   font-size: 0.5rem;
 }
 
+.data ul li i {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
 .copyright {
   width: 100%;
   padding-top: 0.5rem;
@@ -275,4 +286,56 @@ ul li {
   text-decoration: none;
   color: var(--white);
   font-size: 0.6rem;
+}
+
+.team {
+  height: 150px;
+}
+
+@media only screen and (min-width: 481px) {
+  .team {
+    height: 150px;
+    background-image: url('static/Group.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .join-us {
+    padding-bottom: 0rem;
+  }
+
+  .button-section {
+    display: inline;
+  }
+
+  .join-us .team button {
+    margin-top: 6rem;
+  }
+
+  .header {
+    height: 450px;
+  }
+
+  .nav-container .checkbox {
+    height: 48px;
+    width: 48px;
+    top: 40px;
+    right: 40px;
+  }
+
+  .nav-container .hamburger-lines {
+    height: 26px;
+    width: 32px;
+    top: 40px;
+    right: 40px;
+  }
+
+  .logo {
+    top: 25px;
+    left: 40px;
+  }
+
+  .service {
+    width: 40%;
+  }
 }
