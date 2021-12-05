@@ -22,6 +22,8 @@
             <img src="static/Logo.png" alt="Logo OSP Nawojowa Góra" />
           </div>
 
+          <div class="header-polygon"><h1><span id="age">Działamy już<br>wiele lat!</span></h1></div>
+
           <div class="container nav-container">
             <input class="checkbox" type="checkbox" name="" id="" />
             <div class="hamburger-lines">
@@ -31,28 +33,22 @@
             </div>
 
             <div class="menu-items">
-              <li><a href="index.html">STRONA GŁÓWNA</a></li>
-              <li><a href="news.html">AKTUALNOŚCI</a></li>
-              <li><a href="about.html">JEDNOSTKA</a></li>
-              <li><a href="gallery.html">GALERIA</a></li>
-              <li><a href="library.html">BIBLIOTEKA</a></li>
-              <li><a href="contact.html">KONTAKT</a></li>
-
               <ul>
-                <li>
-                  <a href="#"><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
+                <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                <li><a href="news.html">AKTUALNOŚCI</a></li>
+                <li><a href="about.html">JEDNOSTKA</a></li>
+                <li><a href="gallery.html">GALERIA</a></li>
+                <li><a href="library.html">BIBLIOTEKA</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+                <li class="sm"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="sm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="sm"><a href="#"><i class="fab fa-youtube"></i></a></li>
               </ul>
             </div>
         </div>
 
-        <div class="header-polygon"></div>
+        
+        
       </div>
     </nav>
 
@@ -193,5 +189,14 @@
         >
       </div>
     </footer>
+
+    <script>
+
+      var today = new Date(); var year = today.getFullYear();
+      var age = year - 1894;
+      document.getElementById('age').innerHTML = "Działamy już <br>"+age+" lat!";
+
+    </script>
+
   </body>
 </html>
