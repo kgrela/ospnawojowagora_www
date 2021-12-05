@@ -406,9 +406,11 @@ footer {
     top: 40px;
     right: 0px;
     transform: translateX(0);
-    width: 80%;
-    display: inline-flex;
-    z-index: 3;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    z-index: 5;
   }
 
   .navbar .menu-items ul li:nth-child(2),
@@ -609,6 +611,10 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
   .navbar .menu-items {
     top: 64px;
     right: 0;
