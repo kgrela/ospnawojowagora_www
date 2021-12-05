@@ -443,6 +443,29 @@ footer {
     height: 550px;
   }
 
+  .header-polygon {
+    display: block;
+    position: absolute;
+    background-image: url('static/Header-Polygon1.png');
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 300px;
+    right: 0;
+    top: -100px;
+    border-top: 0.3rem var(--red) solid;
+    z-index: 1;
+  }
+
+  .header-polygon h1 {
+    position: absolute;
+    top: 350px;
+    right: 30px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
   h2 {
     font-size: 2.5rem;
   }
@@ -573,10 +596,6 @@ footer {
   }
 
   .header-polygon {
-    display: block;
-    position: absolute;
-    background-image: url('static/Header-Polygon1.png');
-    background-repeat: no-repeat;
     height: 700px;
     width: 450px;
     right: 0;
