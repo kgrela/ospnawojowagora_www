@@ -21,6 +21,7 @@ body {
 
 nav {
   border-top: 0.3rem var(--red) solid;
+  z-index: 0;
 }
 
 h2 {
@@ -80,6 +81,10 @@ footer {
 
 .navbar {
   width: 100%;
+}
+
+.menu-desktop {
+  display: none;
 }
 
 .nav-container {
@@ -221,6 +226,10 @@ footer {
   background-size: cover;
 }
 
+.header-polygon {
+  display: none;
+}
+
 .about-us,
 .history,
 .join-us {
@@ -355,5 +364,116 @@ footer {
 
   .copyright {
     clear: both;
+  }
+
+  .history p {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-container .hamburger-lines {
+    display: none;
+  }
+
+  .nav-container .hamburger-lines .line {
+    display: none;
+  }
+
+  .nav-container .checkbox {
+    display: none;
+  }
+
+  .header {
+    height: 550px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .service {
+    width: 75%;
+  }
+
+  .service p {
+    font-size: 1.5rem;
+  }
+
+  .history p {
+    font-size: 1.5rem;
+  }
+
+  .history-mobile {
+    display: none;
+  }
+
+  .history-desktop {
+    display: block;
+  }
+
+  .fas,
+  .fab {
+    font-size: 2.5rem;
+  }
+
+  .team {
+    height: 250px;
+  }
+
+  .join-us .team button {
+    margin-top: 10rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .data h6 {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .data p {
+    font-size: 0.7rem;
+  }
+
+  .data ul li i {
+    font-size: 1rem;
+    color: var(--white);
+  }
+
+  .copyright a {
+    font-size: 0.8rem;
+  }
+
+  .data {
+    width: 25%;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header-polygon {
+    display: block;
+    position: absolute;
+    background-image: url('static/Header-Polygon1.png');
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 450px;
+    right: 0;
+    top: -150px;
+    border-top: 0.3rem var(--red) solid;
   }
 }
