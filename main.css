@@ -68,6 +68,10 @@ ul li {
   display: inline;
 }
 
+footer {
+  background-color: var(--darkgrey);
+}
+
 .container {
   max-width: 1050px;
   width: 100%;
@@ -292,6 +296,11 @@ ul li {
   height: 150px;
 }
 
+.history-polygon-left,
+.history-polygon-right {
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 481px) {
   .team {
     height: 150px;
@@ -337,5 +346,14 @@ ul li {
 
   .service {
     width: 40%;
+  }
+
+  .data {
+    width: 50%;
+    float: left;
+  }
+
+  .copyright {
+    clear: both;
   }
 }
