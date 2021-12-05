@@ -53,8 +53,7 @@ h4 {
   z-index: 1;
 }
 
-ul,
-li {
+.data ul li {
   display: inline;
 }
 
