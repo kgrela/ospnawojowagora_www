@@ -21,7 +21,13 @@ body {
 
 nav {
   border-top: 0.3rem var(--red) solid;
-  z-index: 0;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 3.2rem;
+  text-align: right;
 }
 
 h2 {
@@ -29,12 +35,14 @@ h2 {
   color: var(--red);
   font-size: 1.5rem;
   padding-bottom: 0.3rem;
+  z-index: 1;
 }
 
 h3 {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
   font-size: 0.8rem;
+  z-index: 1;
 }
 
 h4 {
@@ -42,6 +50,12 @@ h4 {
   color: var(--red);
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
+  z-index: 1;
+}
+
+ul,
+li {
+  display: inline;
 }
 
 button {
@@ -62,11 +76,6 @@ button {
 
 button:hover {
   opacity: 0.7;
-}
-
-ul,
-ul li {
-  display: inline;
 }
 
 footer {
@@ -310,6 +319,10 @@ footer {
   visibility: hidden;
 }
 
+.sm {
+  display: inline;
+}
+
 @media only screen and (min-width: 481px) {
   .team {
     height: 150px;
@@ -384,6 +397,46 @@ footer {
     display: none;
   }
 
+  .navbar .menu-items {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    position: absolute;
+    background: none;
+    box-shadow: none;
+    top: 40px;
+    right: 0px;
+    transform: translateX(0);
+    width: 80%;
+    display: inline-flex;
+    z-index: 3;
+  }
+
+  .navbar .menu-items ul li:nth-child(2),
+  .navbar .menu-items ul li:nth-child(3),
+  .navbar .menu-items ul li:nth-child(4),
+  .navbar .menu-items ul li:nth-child(5),
+  .navbar .menu-items ul li:nth-child(5),
+  .navbar .menu-items ul li:nth-child(6) {
+    margin-left: -12px;
+  }
+
+  .navbar .menu-items ul li:nth-child(7) {
+    margin-left: 0px;
+  }
+
+  .navbar .menu-items ul li:nth-child(8),
+  .navbar .menu-items ul li:nth-child(9) {
+    margin-left: -10px;
+  }
+
+  .navbar .menu-items a {
+    font-size: 0.7rem;
+  }
+
+  .navbar .fab {
+    font-size: 0.8rem;
+  }
+
   .header {
     height: 550px;
   }
@@ -399,6 +452,11 @@ footer {
   h4 {
     font-size: 2rem;
     margin-top: 1rem;
+  }
+
+  ul,
+  li {
+    display: inline;
   }
 
   .service {
@@ -465,6 +523,27 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  .navbar .menu-items a {
+    font-size: 0.9rem;
+  }
+
+  .navbar .fab {
+    font-size: 1.1rem;
+  }
+
+  .navbar .menu-items {
+    top: 64px;
+  }
+
+  .logo {
+    left: 64px;
+    top: 32px;
+  }
+
+  .logo img {
+    width: 96px;
+  }
+
   .header-polygon {
     display: block;
     position: absolute;
@@ -473,7 +552,68 @@ footer {
     height: 700px;
     width: 450px;
     right: 0;
-    top: -150px;
+    top: 0px;
     border-top: 0.3rem var(--red) solid;
+    z-index: 1;
+  }
+
+  .header {
+    height: 650px;
+    background-position-x: -200px;
+  }
+
+  .header-polygon h1 {
+    position: absolute;
+    top: 300px;
+    right: 50px;
+  }
+
+  .data h6 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .data p {
+    font-size: 0.9rem;
+  }
+
+  .copyright a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar .menu-items {
+    top: 64px;
+    right: 0;
+    width: 90%;
+    display: inline-flex;
+  }
+
+  .navbar .menu-items a {
+    font-size: 1.1rem;
+  }
+
+  .navbar .fab {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    height: 750px;
+    background-position: right;
+  }
+
+  .header-polygon {
+    height: 900px;
+    width: 500px;
+  }
+
+  .navbar .menu-items ul li:nth-child(7) {
+    margin-left: 10px;
+  }
+
+  .navbar .menu-items ul li:nth-child(8),
+  .navbar .menu-items ul li:nth-child(9) {
+    margin-left: -10px;
   }
 }
