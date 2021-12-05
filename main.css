@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.7;
+  background-color: #d63636;
 }
 
 footer {
@@ -324,6 +324,7 @@ footer {
 
 @media only screen and (min-width: 481px) {
   .team {
+    width: 100%;
     height: 150px;
     background-image: url('static/Group.png');
     background-position: center;
@@ -458,8 +459,15 @@ footer {
     display: inline;
   }
 
+  .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .service {
-    width: 75%;
+    width: 40%;
   }
 
   .service p {
@@ -543,6 +551,25 @@ footer {
     width: 96px;
   }
 
+  .about-us {
+    width: 80%;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service {
+    width: 35%;
+  }
+
+  .history {
+    clear: both;
+  }
+
   .header-polygon {
     display: block;
     position: absolute;
@@ -602,6 +629,10 @@ footer {
     background-position: right;
   }
 
+  .service {
+    width: 20%;
+  }
+
   .header-polygon {
     height: 900px;
     width: 500px;
@@ -614,5 +645,13 @@ footer {
   .navbar .menu-items ul li:nth-child(8),
   .navbar .menu-items ul li:nth-child(9) {
     margin-left: -10px;
+  }
+
+  .team {
+    height: 300px;
+  }
+
+  .join-us .team button {
+    margin-top: 14rem;
   }
 }
